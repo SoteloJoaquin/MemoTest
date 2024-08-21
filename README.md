@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# MemoTest Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+MemoTest Game es una aplicación de memoria construida con React. El objetivo del juego es encontrar pares de emojis coincidentes. Los bloques de memoria se voltean para revelar el emoji y los jugadores deben recordar las posiciones para hacer coincidir los pares. El juego incluye animaciones y lógica para manejar las selecciones y comparaciones de bloques.
 
-In the project directory, you can run:
+## Tecnologías Utilizadas
 
-### `npm start`
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **CSS**: Para los estilos de los componentes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Estructura del Proyecto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **`src/`**: Contiene los archivos fuente del proyecto.
+  - **`App.js`**: Componente principal de la aplicación que maneja el estado del juego y la lógica.
+  - **`components/`**: Directorio con los componentes de la aplicación.
+    - **`Board/Board.js`**: Componente que representa el tablero del juego y renderiza los bloques de memoria.
+    - **`MemoBlock/MemoBlock.js`**: Componente que representa un bloque de memoria individual.
+  - **`App.css`**: Estilos globales para el componente `App`.
+  - **`components/Board/Board.css`**: Estilos específicos para el componente `Board`.
+  - **`components/MemoBlock/MemoBlock.css`**: Estilos específicos para el componente `MemoBlock`.
 
-### `npm test`
+## Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para ejecutar la aplicación localmente, sigue estos pasos:
 
-### `npm run build`
+1. **Clona el repositorio**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   git clone https://github.com/SoteloJoaquin/MemoTest.git
+   git clone git@github.com:SoteloJoaquin/MemoTest.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Navega al directorio del proyecto**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   cd MemoTest
+   ```
 
-### `npm run eject`
+3. **Instala las dependencias**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Inicia la aplicación**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   La aplicación se abrirá en tu navegador por defecto en `http://localhost:3000`.
 
-## Learn More
+## Uso
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- En el tablero del juego, cada bloque de memoria muestra una cara frontal vacía y una cara trasera con un emoji.
+- Haz clic en un bloque para voltear y revelar el emoji.
+- Intenta encontrar pares de bloques con el mismo emoji.
+- Los bloques que no coinciden se volverán a ocultar después de un breve período.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribución
 
-### Code Splitting
+Si deseas contribuir al proyecto, por favor sigue estos pasos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Fork del repositorio**.
+2. **Crea una rama para tu característica**:
 
-### Analyzing the Bundle Size
+   ```bash
+   git checkout -b mi-nueva-caracteristica
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. **Haz tus cambios y confirma**:
 
-### Making a Progressive Web App
+   ```bash
+   git add .
+   git commit -m "Añadir nueva característica"
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **Empuja a tu repositorio**:
 
-### Advanced Configuration
+   ```bash
+   git push origin mi-nueva-caracteristica
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. **Crea un Pull Request** en GitHub.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Gracias por tu interés en el MemoTest Game! Disfruta jugando y contribuyendo.
+```
